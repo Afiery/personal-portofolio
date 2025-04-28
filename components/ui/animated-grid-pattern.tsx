@@ -65,6 +65,7 @@ export default function AnimatedGridPattern({
   };
 
   // Update squares to animate in
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
       setSquares(generateSquares(numSquares));
@@ -82,13 +83,14 @@ export default function AnimatedGridPattern({
       }
     });
 
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current);
+    const current = containerRef.current;
+    if (current) {
+      resizeObserver.observe(current);
     }
 
     return () => {
-      if (containerRef.current) {
-        resizeObserver.unobserve(containerRef.current);
+      if (current) {
+        resizeObserver.unobserve(current);
       }
     };
   }, [containerRef]);

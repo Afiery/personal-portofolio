@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { GithubLogo, LinkedinLogo } from "../icons";
-import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 
