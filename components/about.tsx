@@ -23,8 +23,8 @@ const About = () => {
               Fikri Putra Pratama
             </h2>
             <p className="text-muted-foreground mb-4 text-justify">
-              Hello ! My name is Fikri Putra Pratama and people often call me Fikri. I'm a web developer that mainly use Laravel as my Framework.
-              I’m also passionate about exploring new technologies and keeping up with the latest design trends, especially GFX editing.
+              Hello ! My name is Fikri Putra Pratama and people often call me Fikri. I&apos;m a web developer that mainly use Laravel as my Framework.
+              I&apos;m also passionate about exploring new technologies and keeping up with the latest design trends, especially GFX editing.
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
               <Button className="rounded-full">
