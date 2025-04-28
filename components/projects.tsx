@@ -49,14 +49,6 @@ const ProjectCard = ({
 
         {/* Actions */}
         <div className="flex gap-3 mt-auto">
-          {liveUrl && (
-            <Button variant="default" className="rounded-full" asChild>
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
-              </a>
-            </Button>
-          )}
           {githubUrl && (
             <Button
               variant="outline"
@@ -78,40 +70,31 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "IAMS (Internal Audit Management System)",
       description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
+        "A web-based solution with a centralized dashboard for managing audit entries and delivering insightful audit reports instantly.",
+      image: "/images/projects/iaet-1.jpg",
+      technologies: ["Laravel", "MySQL", "PHP", "JavaScript"],
+      liveUrl: "",
+      githubUrl: "https://github.com/Afiery/iams",
     },
     {
-      title: "AI Task Manager",
+      title: "SIGAP",
       description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
+        "A web-based platform for tracking healthcare license expiry dates, with external notifications for timely renewal reminders and document management.",
+      image: "/images/projects/sigap.png",
+      technologies: ["Laravel", "MySQL", "PHP", "JavaScript"],
+      liveUrl: "",
+      githubUrl: "https://github.com/Afiery/sigap",
     },
     {
-      title: "Real-time Chat Application",
+      title: "SIMPAD",
       description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
-    },
-    {
-      title: "AI Image Generator",
-      description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
+        "A web-based system for village administration that facilitates the creation and management of official documents, such as certificates and letters, with ease and efficiency.",
+      image: "/images/projects/simpad.jpg",
+      technologies: ["Laravel", "MySQL", "PHP", "JavaScript"],
+      liveUrl: "",
+      githubUrl: "https://github.com/Afiery/simpad",
     },
   ];
 
@@ -119,14 +102,14 @@ const Projects = () => {
     <section id="projects" className="relative py-20 px-6">
       <div className="max-w-screen-md mx-auto">
         <div className="text-center mb-12">
-          <Badge variant="secondary" className="mb-4">
+          <Badge variant="secondary" className="mt-6 mb-4">
             Projects
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
             Featured Work
           </h2>
           <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">
-            Showcasing some of my best projects and technical achievements
+            Showcase of my personal projects
           </p>
         </div>
 

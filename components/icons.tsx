@@ -15,6 +15,21 @@ export const GithubLogo = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const LinkedinLogo = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <title>LinkedIn</title>
+    <path
+      className="fill-current"
+      d="M20.447 20.452h-3.69v-5.566c0-1.327-.024-3.039-1.847-3.039-1.849 0-2.133 1.447-2.133 2.94v5.665H9.21V9h3.517v1.555h.048c.486-.916 1.671-1.877 3.437-1.877 3.675 0 4.352 2.425 4.352 5.587v5.387h-.048zM5.339 7.019c-1.074 0-1.95-.872-1.95-1.95s.876-1.95 1.95-1.95c1.075 0 1.95.872 1.95 1.95s-.875 1.95-1.95 1.95zm1.847 13.433H3.49V9h3.696v11.452zM6.186 4.227c-.125 0-.224-.1-.224-.224s.1-.224.224-.224c.125 0 .224.1.224.224s-.1.224-.224.224z"
+    />
+  </svg>
+);
+
 export const XLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     role="img"
